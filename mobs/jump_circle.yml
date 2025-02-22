@@ -1,0 +1,19 @@
+JumpCircle:
+    Type: SLIME
+    Display: 'Jump circle'
+    Health: 9999
+    Damage: 0
+    Armor: 0
+    Options:
+        AlwaysShowName: true
+        invincible: true
+        NoAI: true
+        Silent: true
+    AIGoalSelectors:
+    - clear
+    AITargetSelectors:
+    - clear
+    Skills:
+    - model{mid=magic circle3,scale=1} @self ~onSpawn
+    - throw{t=5;v=2} @PlayersInRadius{r=5} ~onAttack
+    

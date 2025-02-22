@@ -1,0 +1,32 @@
+ZERO_FIGHTER:
+  Type: HORSE
+  Display: '&6ZERO_FIGHTER'
+  Health: 200
+  Damage: 10
+  Armor: 200
+  BossBar:
+    Enabled: true
+    Title: '零戦'
+    Color: red
+  Options:
+    PreventVanillaDamage: false
+    Collidable: false
+    ShowHealth: true
+    NoGravity: true
+    MovementSpeed: 1
+    KnockbackResistance: 0.1
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    Silent: true
+    Persistent: true
+    Interactable: true
+    HasRider: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=zero;n=false;d=true;drive=true;step=1;scale=8;lyaw=true;syncbody=false} @self ~onSpawn
+  - mountmodel{mid=zero;m=Flying;p=mount} @trigger ~onInteract
+  - dismountmodel{mid=zero;action=dismount;p=mount} @self ~onRiderDismount
