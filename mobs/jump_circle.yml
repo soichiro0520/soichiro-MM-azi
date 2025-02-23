@@ -7,7 +7,7 @@ JumpCircle:
     Options:
         AlwaysShowName: true
         invincible: false
-        NoAI: false
+        NoAI: true
     AIGoalSelectors:
     - clear
     AITargetSelectors:
