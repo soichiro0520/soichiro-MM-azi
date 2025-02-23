@@ -6,7 +6,7 @@ JumpCircle:
     Armor: 0
     Options:
         AlwaysShowName: true
-        invincible: true
+        invincible: false
         NoAI: false
         Silent: true
     AIGoalSelectors:
@@ -14,6 +14,7 @@ JumpCircle:
     AITargetSelectors:
     - clear
     Skills:
-    - model{mid=magiccircle,scale=1} @self ~onSpawn
+    - model{mid=magiccircle;scale=1} @self ~onSpawn
     - jump{velocity=4} @PlayersInRadius{r=3} ~onDamaged 
     - state {s=jumpmotion} @self ~onDamaged 
+    - heal{amount=9999} @self ~onDamaged
