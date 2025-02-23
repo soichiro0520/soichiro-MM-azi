@@ -8,13 +8,12 @@ JumpCircle:
         AlwaysShowName: true
         invincible: false
         NoAI: false
-        Silent: true
     AIGoalSelectors:
     - clear
     AITargetSelectors:
     - clear
     Skills:
     - model{mid=magiccircle;scale=1} @self ~onSpawn
-    - Velocity{m=SET;x=0;y=2;z=0} @EIR{r=5}
+    - Velocity{m=SET;x=0;y=2;z=0} @EIR{r=5} ~onDamaged 
     - state {s=jumpmotion} @self ~onDamaged 
     - heal{amount=9999} @self ~onDamaged
