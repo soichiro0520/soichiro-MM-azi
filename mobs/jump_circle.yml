@@ -15,5 +15,5 @@ JumpCircle:
     - clear
     Skills:
     - model{mid=magic circle3,scale=1} @self ~onSpawn
-    - throw{t=5;v=2} @PlayersInRadius{r=5} ~onAttack
-    
+    - throw{t=5;v=2} @PlayersInRadius{r=3} ~onAttack
+    - state{state=jumpmotion,} @self ~onAttack
