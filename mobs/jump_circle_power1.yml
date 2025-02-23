@@ -1,4 +1,4 @@
-JumpCircle:
+JumpCircle1:
     Type: SLIME
     Display: 'Jump circle'
     Health: 9999
@@ -14,6 +14,6 @@ JumpCircle:
     - clear
     Skills:
     - model{mid=magiccircle;scale=1} @self ~onSpawn
-    - Velocity{m=SET;x=0;y=2;z=0} @EIR{r=5} ~onDamaged 
+    - Velocity{m=SET;x=0;y=1;z=0} @EIR{r=5} ~onDamaged 
     - state {s=jumpmotion} @self ~onDamaged 
     - heal{amount=9999} @self ~onDamaged
