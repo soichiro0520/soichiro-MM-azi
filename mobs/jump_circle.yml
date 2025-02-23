@@ -14,6 +14,6 @@ JumpCircle:
     AITargetSelectors:
     - clear
     Skills:
-    - model{mid=magic circle3,scale=1} @self ~onSpawn
+    - model{mid=magiccircle,scale=1} @self ~onSpawn
     - jump{velocity=4} @PlayersInRadius{r=3} ~onDamaged 
     - state {s=jumpmotion} @self ~onDamaged 
