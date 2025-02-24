@@ -16,7 +16,7 @@ spider_zakomob_1:
     - clear
     - 0 player
     Skills:
-    - scale{s=0.75} @self ~onSpawn
+    - scale{s=-1} @self ~onSpawn
     - mounttarget{cooldown=20;range=5} @playersInRadius{radius=3;a=45} ~onAttack 
     - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;level=2;radius=1;duration=100;waitTime=0;waitTick=0;cooldown=20;range=5} @self ~onAttack 
 spider_zakomob_2:
