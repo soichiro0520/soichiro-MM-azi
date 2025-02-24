@@ -17,7 +17,7 @@ spider_zakomob_1:
     Skills:
     - scale{s=0.5} @self ~onSpawn
     - mounttarget{cooldown=20;range=5} @self ~onDamaged
-    - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;radius=1;duration=100;waitTime=0;waitTick=0;cooldown=20;range=5} @self ~onDamaged
+    - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;level=2;radius=1;duration=100;waitTime=0;waitTick=0;cooldown=20;range=5} @self ~onDamaged
 spider_zakomob_2:
     Type: SPIDER
     Display: 'spider_zakoMob2'
@@ -36,6 +36,6 @@ spider_zakomob_2:
     - 0 player
     Skills:
     - scale{s=1.25} @self ~onSpawn
-    - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;radius=2;duration=150;waitTime=0;waitTick=0;cooldown=10;range=5} @self ~onAttack
+    - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;level=3;radius=2;duration=150;waitTime=0;waitTick=0;cooldown=10;range=5} @self ~onAttack
     - projectile{bullettype=BLOCK;bulletmaterial=COBWEB;speed=1;damage=2;cooldown=30;range=5} @self ~onAttack
         
