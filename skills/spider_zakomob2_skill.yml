@@ -1,7 +1,7 @@
 spider_zakoMob2_skill:
   Skills:
-  - aura{auraname=loop;d=2000;i=10;oT=spider_zakomob1_loop} @self
-spider_zakomob1_loop:
+  - aura{auraname=loop;d=2000;i=10;oT=spider_zakomob2_loop} @self
+spider_zakomob2_loop:
   Skills:
   - randomskill{s=spider_zakoMob2_attack1,spider_zakoMob2_attack2,spider_zakoMob2_attack3} @self
 spider_zakoMob2_attack1:
