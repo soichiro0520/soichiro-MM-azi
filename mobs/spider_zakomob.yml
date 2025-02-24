@@ -44,7 +44,7 @@ spider_zakomob_3:
     Display: 'spider_zakoMob3'
     Health: 30
     Damage: 4
-    Armor: 5
+    Armor: 0
     Options:
         AlwaysShowName: true
         invincible: false
