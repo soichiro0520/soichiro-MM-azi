@@ -16,9 +16,8 @@ spider_zakomob_1:
     - clear
     - 0 player
     Skills:
-    - scale{s=-1} @self ~onSpawn
-    - mounttarget{cooldown=20;range=5} @playersInRadius{radius=3;a=45} ~onAttack 
-    - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;level=2;radius=1;duration=100;waitTime=0;waitTick=0;cooldown=20;range=5} @self ~onAttack 
+    - scale{s=1} @self ~onSpawn
+    - skill{skill=spider_zakoMob_skill} @self ~onSpawn
 spider_zakomob_2:
     Type: SPIDER
     Display: 'spider_zakoMob2'
@@ -38,7 +37,7 @@ spider_zakomob_2:
     - 0 player
     Skills:
     - scale{s=1.25} @self ~onSpawn
-    - projectile{bullettype=BLOCK;bulletmaterial=COBWEB;speed=1;damage=5;cooldown=5;range=10} @target{targetplayers=true} ~onAttack
+    - skill{skill=spider_zakoMob2_skill} @self ~onSpawn
 spider_zakomob_3:
     Type: SPIDER
     Display: 'spider_zakoMob3'
@@ -58,4 +57,25 @@ spider_zakomob_3:
     - 0 player
     Skills:
     - scale{s=2} @self ~onSpawn
-    - summon{type=spider_zakomob_1;cooldown=20;range=5;amount=3} @self ~onAttack        
+    - skill{skill=spider_zakoMob3_skill} @self ~onSpawn        
+    spider_zakomob_4:
+    Type: SPIDER
+    Display: 'spider_zakoMob'
+    Health: 10
+    Damage: 1
+    Armor: 0
+    Options:
+        AlwaysShowName: true
+        invincible: false
+        NoAI: false
+        preventOtherDrops: true
+    AIGoalSelectors:
+    - clear
+    - 0 meleeattack
+    AITargetSelectors:
+    - clear
+    - 0 player
+    Skills:
+    - scale{s=-1} @self ~onSpawn
+    - mounttarget{cooldown=20;range=5} @playersInRadius{radius=3;a=45} ~onAttack 
+    - summonAreaEffectCloud{particle=dripping_obsidian_tear;type=POISON;level=2;radius=1;duration=100;waitTime=0;waitTick=0;cooldown=20;range=5} @self ~onAttack 
