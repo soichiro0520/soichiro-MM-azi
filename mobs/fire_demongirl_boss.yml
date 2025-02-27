@@ -1,5 +1,5 @@
 fire_demongirl_boss:
-    Type: SLIME
+    Type: WITCH
     Display: 'fire_demongirl_boss'
     Health: 100
     Damage: 10
