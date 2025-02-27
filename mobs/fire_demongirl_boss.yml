@@ -1,0 +1,25 @@
+fire_demongirl_boss:
+    Type: SLIME
+    Display: 'fire_demongirl_boss'
+    Health: 100
+    Damage: 10
+    Armor: 0
+    BossBar:
+    Enabled: true
+    Title: '炎の魔女イグニス'
+    Color: red
+    Options:
+        AlwaysShowName: true
+        invincible: false
+        NoAI: false
+        preventOtherDrops: true
+        Silent: true
+    AIGoalSelectors:
+    - clear
+    - 0 meleeattack
+    AITargetSelectors:
+    - clear
+    - 0 player
+    Skills:
+    - model{m=fire_demongirl_boss;scale=1;s=1} @self ~onSpawn
+    - skill{skill=} @self ~onSpawn

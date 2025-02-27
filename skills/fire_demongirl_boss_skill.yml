@@ -1,0 +1,18 @@
+fire_demongirl_boss_skill:
+  Skills:
+  - aura{auraname=loop;d=2000;i=10;oT=fire_demongirl_boss_loop} @self
+fire_demongirl_boss_loop:
+  Skills:
+  - randomskill{s=flameball_attack,flame_shoot} @self
+flameball_attack:
+  Conditions:
+  - hasaura{aura=silent} false
+  Skills:
+  - aura{auraName=silent;d=100;rd=true} @self
+  - state{m=fire_demongirl_boss;s=special_attack} @self
+flame_shoot:
+  Conditions:
+  - hasaura{aura=silent} false
+  Skills:
+  - aura{auraName=silent;d=100;rd=true} @self
+  - state{m=fire_demongirl_boss;s=normal_attack} @self
