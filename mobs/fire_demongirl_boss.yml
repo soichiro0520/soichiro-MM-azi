@@ -20,5 +20,5 @@ fire_demongirl_boss:
     - clear
     - 0 player
     Skills:
-    - model{m=fire_demongirl_boss;scale=1;s=1} @self ~onSpawn
+    - model{m=fire_demongirl_boss;scale=2} @self ~onSpawn
     - skill{skill=} @self ~onSpawn
