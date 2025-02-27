@@ -11,7 +11,6 @@ fire_demongirl_boss:
     Options:
         AlwaysShowName: true
         invincible: false
-        NoAI: false
         preventOtherDrops: true
         Silent: true
     AIGoalSelectors:
