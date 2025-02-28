@@ -21,7 +21,6 @@ fire_demongirl_boss:
     AITargetSelectors:
     - clear
     - player
-    - villager 
     Skills:
     - model{m=fire_demongirl_boss;scale=2} @self ~onSpawn
     - state{m=fire_demongirl_boss;s=idel} @self ~onSpawn
