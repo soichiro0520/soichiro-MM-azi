@@ -16,7 +16,7 @@ fire_demongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - 0 meleeattack
+    - 0 BowAttack
     AITargetSelectors:
     - clear
     - 0 player
