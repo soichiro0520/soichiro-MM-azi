@@ -16,11 +16,10 @@ fire_demongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - 0 rangedAttack{speed=1.0;attackradius=10}  @self ~onAttack
+    - rangedAttack{speed=1.0;attackradius=10}  @self ~onAttack
     AITargetSelectors:
     - clear
-    - 0 player
-    - 1 attacker
+    - player{maxdistance=10} @self ~onAttack
     Skills:
     - model{m=fire_demongirl_boss;scale=2} @self ~onSpawn
     - skill{skill=fire_demongirl_boss_skill}  @self ~onAttack 
