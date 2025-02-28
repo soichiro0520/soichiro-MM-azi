@@ -21,6 +21,7 @@ fire_demongirl_boss:
     AITargetSelectors:
     - clear
     - 0 player
+    - 1 attacker
     Skills:
     - model{m=fire_demongirl_boss;scale=2} @self ~onSpawn
     - skill{skill=fire_demongirl_boss_skill}  @self ~onAttack 
