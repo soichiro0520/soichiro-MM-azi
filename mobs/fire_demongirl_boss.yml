@@ -18,7 +18,6 @@ fire_demongirl_boss:
     - clear
     - rangedAttack{speed=1.0;range=10} @self ~onAttack
     - lookAtPlayer{range=10} @self ~onSpawn
-    - lookAtTarget{range=10} @self ~onSpawn
     AITargetSelectors:
     - clear
     - player
