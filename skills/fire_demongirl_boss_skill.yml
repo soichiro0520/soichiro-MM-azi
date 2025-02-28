@@ -1,6 +1,6 @@
 fire_demongirl_boss_skill:
   Skills:
-  - aura{auraname=loop;d=2000;i=10;oT=fire_demongirl_boss_loop} @self
+  - aura{auraname=loop;d=2000;interval=10;oT=fire_demongirl_boss_loop} @self
 fire_demongirl_boss_loop:
   Skills:
   - randomskill{s=flameball_attack,flame_shoot} @self
