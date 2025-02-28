@@ -1,5 +1,6 @@
 fire_demongirl_boss_skill:
   Skills:
+  - state{m=fire_demongirl_boss;s=idel} @self
   - aura{auraname=loop;d=2000;interval=10;oT=fire_demongirl_boss_loop} @self
 fire_demongirl_boss_loop:
   Skills:
