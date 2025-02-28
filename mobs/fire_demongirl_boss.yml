@@ -17,7 +17,7 @@ fire_demongirl_boss:
     AIGoalSelectors:
     - clear
     - lookAtPlayer{range=10} @self ~onSpawn
-    - rangedAttack{speed=1.0;range=10} @self ~onAttack
+    - rangedAttack{range=10} @self ~onAttack
     AITargetSelectors:
     - clear
     - player
