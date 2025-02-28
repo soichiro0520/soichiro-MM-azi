@@ -19,7 +19,7 @@ fire_demongirl_boss:
     - rangedAttack{speed=1.0;damage=10;range=10} @self ~onAttack
     AITargetSelectors:
     - clear
-    - player{maxdistance=10} @self ~onAttack
+    - player
     Skills:
     - model{m=fire_demongirl_boss;scale=2} @self ~onSpawn
     - skill{skill=fire_demongirl_boss_skill}  @self ~onAttack 
