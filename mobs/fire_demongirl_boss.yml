@@ -16,8 +16,8 @@ fire_demongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - lookAtPlayer{range=10} @self ~onSpawn
     - rangedAttack{speed=1;range=10} @self ~onSpawn
+    - lookAtPlayer{range=10} @self ~onSpawn
     AITargetSelectors:
     - clear
     - player
