@@ -5,9 +5,9 @@ fire_demongirl_boss:
     Damage: 10
     Armor: 0
     BossBar:
-    Enabled: true
-    Title: '炎の魔女イグニス'
-    Color: red
+        Enabled: true
+        Title: '炎の魔女イグニス'
+        Color: red
     Options:
         PreventSunburn: true
         AlwaysShowName: true
