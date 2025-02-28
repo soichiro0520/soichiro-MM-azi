@@ -16,11 +16,12 @@ fire_demongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - lookAtPlayer{range=10} @self ~onSpawn
     - meleeAttack
+    - lookAtPlayer{range=10} @self ~onSpawn
     AITargetSelectors:
     - clear
     - player
+    - villager 
     Skills:
     - model{m=fire_demongirl_boss;scale=2} @self ~onSpawn
     - skill{skill=fire_demongirl_boss_skill}  @self ~onAttack 
