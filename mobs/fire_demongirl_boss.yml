@@ -1,5 +1,5 @@
 fire_demongirl_boss:
-    Type: BLAZE
+    Type: ZOMBIE
     Display: 'fire_demongirl_boss'
     Health: 100
     Damage: 10
