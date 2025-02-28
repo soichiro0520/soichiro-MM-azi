@@ -16,7 +16,7 @@ fire_demongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - rangedAttack{speed=1.0;attackradius=10}  @self ~onAttack
+    - rangedAttack{speed=1.0;damage=10;range=10} @self ~onAttack
     AITargetSelectors:
     - clear
     - player{maxdistance=10} @self ~onAttack
