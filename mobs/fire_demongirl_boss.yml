@@ -1,5 +1,5 @@
 fire_demongirl_boss:
-    Type: WITCH
+    Type: SKELETON
     Display: 'fire_demongirl_boss'
     Health: 100
     Damage: 10
@@ -9,6 +9,7 @@ fire_demongirl_boss:
     Title: '炎の魔女イグニス'
     Color: red
     Options:
+        PreventSunburn: true
         AlwaysShowName: true
         invincible: false
         preventOtherDrops: true
