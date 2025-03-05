@@ -1,0 +1,20 @@
+dragongirl_skill:
+  Skills:
+  - aura{auraname=loop;d=2000;interval=60;oT=lightning_dragongairl_boss_loop} @self
+lightning_dragongairl_boss_loop:
+  Skills:
+  - randomskill{s=fistattack} @self
+fistattack:
+  Conditions:
+  - hasaura{aura=silent} false
+  Skills:
+  - aura{auraName=silent;d=100;rd=true} @self
+  - state{m=dragongirl;s=fist_attack} @self
+  - delay 20
+  - particlecircle{radius=2;particle=trial_spawner_detection_ominous;amount=10} @self
+  - particle{particle=trial_spawner_detection_ominous;count=3} @origin 
+  - delay 20
+  - particlesphere{radius=2;particle=electric_spark;amount=10} @Location{yoffset=5}
+  - delay 15
+  - particlecircle{radius=2;particle=block_dust;amount=20} @origin
+  - damage{amount=10} @PIR {radius=5} 

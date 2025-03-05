@@ -1,0 +1,29 @@
+fire_demongirl_boss:
+    Type: ZOMBIE
+    Display: 'lightning_dragongirl_boss'
+    Health: 100
+    Damage: 10
+    Armor: 0
+    BossBar:
+        Enabled: true
+        Title: '雷の竜女テンペスト'
+        Color: yellow
+    Options:
+        PreventSunburn: true
+        AlwaysShowName: true
+        invincible: false
+        preventOtherDrops: true
+        Silent: true
+    AIGoalSelectors:
+    - clear
+    - meleeAttack
+    - lookAtPlayer{range=10} @self ~onSpawn
+    AITargetSelectors:
+    - clear
+    - player
+    Skills:
+    - model{m=dragongirl;scale=2;s=1} @self ~onSpawn
+    - state{m=dragongirl;s=wake} @self ~onDamaged 
+    - delay 40
+    - state{m=dragongirl;s=attack_mode} @self 
+    - skill{skill=dragongirl_skill}  @self ~onAttack 
