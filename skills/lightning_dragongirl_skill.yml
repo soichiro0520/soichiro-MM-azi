@@ -17,7 +17,7 @@ fistattack:
   - particle{particle=trial_spawner_detection_ominous;amount=50;delay=40} @LocationRadius{radius=3}
   - particlesphere{radius=5;particle=electric_spark;amount=1;delay=60} @Location{yoffset=5}
   - particle{particle=explosion;amount=10;delay=70} @blocksinradius{radius=5}
-  - blockWave{delay=75;velocity=2;radius=10;velocityy=2;noise=1;particle=electric_spark}
+  - blockWave{delay=75;velocity=2;radius=10;velocityy=2;noise=1;particle=electric_spark;hidesourceblock=true;material=cobblestone} 
   - damage{amount=10} @PIR {radius=5} 
   - setspeed{speed=1} @self
   - skillCooldown{skill=fistattack;cooldown=400} @self
