@@ -28,4 +28,4 @@ lightning_dragongirl_boss:
     - state{m=dragongirl;s=wake} @self ~onDamaged 
     - state{m=dragongirl;s=attack_mode;delay=100} @self  ~onDamaged 
     - state{m=dragongirl;s=attack} @self ~onAttack 
-    - skill{skill=dragongirl_skill}  @self ~onDamaged  
+    - skill{skill=dragongirl_skill;delay=100}  @self ~onDamaged  
