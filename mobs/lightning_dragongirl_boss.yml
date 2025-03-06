@@ -20,8 +20,10 @@ lightning_dragongirl_boss:
     - lookAtPlayer{range=10} @self ~onSpawn
     AITargetSelectors:
     - clear
+    - player{range=10} @self ~onSpawn
     Skills:
     - model{m=dragongirl;scale=2;s=1} @self ~onSpawn 
-    - state{m=dragongirl;s=wake} @self{limit=1} ~onEntercombat   
+    - state{m=dragongirl;s=wake} @self{limit=1} ~onEntercombat
+    - state{m=dragongirl;s=attack_mode} @self ~onDamaged  
     - state{m=dragongirl;s=attack_mode}  
     - skill{skill=dragongirl_skill}  @self ~onAttack 
