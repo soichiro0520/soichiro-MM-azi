@@ -18,6 +18,7 @@ lightning_dragongirl_boss:
     - clear
     - meleeAttack{range=3} @target ~onAttack
     - lookAtPlayer{range=10} @self ~onSpawn
+    - fleeVillagers{distance=10} @self ~onSpawn
     AITargetSelectors:
     - clear
     - player
