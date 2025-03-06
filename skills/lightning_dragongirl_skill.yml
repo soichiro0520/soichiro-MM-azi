@@ -25,6 +25,7 @@ fistattack:
 normal_attack:
   Conditions:
   - hasaura{aura=silent} false
+  - skillOnCooldown{skill=fistattack} true
   Skills:
   - aura{auraName=silent;d=100;rd=true} @self
   - state{m=dragongirl;s=attack} @self
