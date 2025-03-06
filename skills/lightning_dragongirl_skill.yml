@@ -19,9 +19,8 @@ fistattack:
   - particle{particle=explosion;amount=10;delay=70} @blocksinradius{radius=5}
   - blockWave{delay=75;velocity=2;radius=10;velocityy=2;noise=10;particle=electric_spark;hidesourceblock=false;material=cobblestone} 
   - damage{amount=10} @PIR {radius=5} 
-  - setspeed{speed=1} @self
+  - setspeed{speed=1;delay=100} @self
   - skillCooldown{skill=fistattack;cooldown=400} @self
-  - delay{delay=100} @self
 normal_attack:
   Conditions:
   - hasaura{aura=silent} false
