@@ -26,4 +26,4 @@ lightning_dragongirl_boss:
     - state{m=dragongirl;s=wake} @self{limit=1} ~onSpawn
     - state{m=dragongirl;s=attack_mode} @self  ~onCombat
     - skill{skill=dragongirl_skill}  @self ~onAttack 
-    - state{m=dragongirl;s=idle} @self ~onDeath
+    - state{m=dragongirl;s=idle} @self ~onLeavecombat 
