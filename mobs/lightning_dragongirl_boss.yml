@@ -24,7 +24,7 @@ lightning_dragongirl_boss:
     - clear
     - player{range=10} @self ~onSpawn
     Skills:
-    - model{m=dragongirl;scale=2;s=1} @self ~onSpawn 
+    - model{m=dragongirl;scale=1.5;s=1} @self ~onSpawn 
     - state{m=dragongirl;s=wake} @self ~onDamaged 
     - state{m=dragongirl;s=attack_mode;delay=40} @self  ~onDamaged 
     - state{m=dragongirl;s=attack} @self ~onAttack 
