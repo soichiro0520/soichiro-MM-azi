@@ -15,6 +15,7 @@ lightning_dragongirl_boss:
         preventOtherDrops: true
         Silent: true
         Knockbackregistance: 1
+        walkspeed: 1
     AIGoalSelectors:
     - clear
     - doNothing
