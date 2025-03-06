@@ -18,15 +18,12 @@ lightning_dragongirl_boss:
     - clear
     - meleeAttack{range=3} @target ~onAttack
     - lookAtPlayer{range=10} @self ~onSpawn
-    - fleeVillagers{distance=10} @self ~onSpawn
     AITargetSelectors:
     - clear
-    - player
-    - villagers
+    - player{range=3} 
     Skills:
-    - model{m=dragongirl;scale=3;s=2} @self ~onSpawn
-    - damage{amount=1} @self ~onEntercombat 
-    - state{m=dragongirl;s=wake} @self ~onDamaged 
-    - delay{duration=100} @self ~onDamaged
+    - model{m=dragongirl;scale=3;s=2} @self ~onSpawn 
+    - 
+    - state{m=dragongirl;s=wake} @self 
     - state{m=dragongirl;s=attack_mode} @self 
     - skill{skill=dragongirl_skill}  @self ~onAttack 
