@@ -14,6 +14,7 @@ lightning_dragongirl_boss:
         invincible: false
         preventOtherDrops: true
         Silent: true
+        Knockbackregistance: 1
     AIGoalSelectors:
     - clear
     - doNothing
