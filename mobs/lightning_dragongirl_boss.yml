@@ -1,5 +1,5 @@
 lightning_dragongirl_boss:
-    Type: IRON_GOLEM
+    Type: ZOMBIE
     Display: 'lightning_dragongirl_boss'
     Health: 100
     Damage: 10
