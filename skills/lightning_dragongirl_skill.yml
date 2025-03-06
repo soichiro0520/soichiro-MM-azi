@@ -1,6 +1,6 @@
 dragongirl_skill:
   Skills:
-  - aura{auraname=loop;d=500;interval=200;oT=lightning_dragongairl_boss_loop} @self
+  - aura{auraname=loop;d=500;interval=100;oT=lightning_dragongairl_boss_loop} @self
 lightning_dragongairl_boss_loop:
   Skills:
   - randomskill{s=fistattack,normal_attack} @self
