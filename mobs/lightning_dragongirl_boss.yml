@@ -17,7 +17,7 @@ lightning_dragongirl_boss:
         Knockbackregistance: 1
     AIGoalSelectors:
     - clear
-    - doNothing{fleeconditions=true} @self ~onSpawn
+    - doNothing
     - meleeattack{range=3} 
     - lookAtPlayer{range=10} @self ~onSpawn
     AITargetSelectors:

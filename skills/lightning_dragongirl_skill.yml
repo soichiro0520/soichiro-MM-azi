@@ -1,5 +1,6 @@
 dragongirl_skill:
   Skills:
+  - setai{goal=meleeattack;range=3} @self
   - aura{auraname=loop;d=500;interval=100;oT=lightning_dragongairl_boss_loop} @self
 lightning_dragongairl_boss_loop:
   Skills:
@@ -8,7 +9,6 @@ lightning_dragongairl_boss_loop:
 fistattack:
   Conditions:
   - hasaura{aura=silent} false
-  - skillOnCooldown{skill=fistattack} false
   Skills:
   - aura{auraName=silent;d=100;rd=true} @self
   - setspeed{speed=0} @self
@@ -21,12 +21,3 @@ fistattack:
   - damage{amount=10;delay=70} @entitiesInRadius{radius=10}  
   - setspeed{speed=1;delay=100} @self
   - skillCooldown{skill=fistattack;cooldown=400} @self
-normal_attack:
-  Conditions:
-  - hasaura{aura=silent} false
-  - skillOnCooldown{skill=fistattack} true
-  Skills:
-  - aura{auraName=silent;d=100;rd=true} @self
-  - state{m=dragongirl;s=attack} @self
-  - delay{delay=20} @self
-  - damage{amount=10} @PIR {radius=5;a=45}
