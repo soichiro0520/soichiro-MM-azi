@@ -24,5 +24,6 @@ lightning_dragongirl_boss:
     Skills:
     - model{m=dragongirl;scale=2;s=1} @self ~onSpawn 
     - state{m=dragongirl;s=wake} @self{limit=1} ~onSpawn
-    - state{m=dragongirl;s=attack_mode} @self  ~onSpawn  
+    - state{m=dragongirl;s=attack_mode} @self  ~onCombat
     - skill{skill=dragongirl_skill}  @self ~onAttack 
+    - state{m=dragongirl;s=idle} @self ~onDeath
