@@ -1,6 +1,8 @@
 dragongirl_skill:
   Skills:
-  - setai{goal=meleeattack;range=3} @self
+  - aigoal{aigoalselector=clear} @self
+  - aigoal{aigoalselector=meleeattack;range=3} @self
+  - aigoal{aigoalselector=lookAtPlayer;range=10} @self
   - aura{auraname=loop;d=500;interval=100;oT=lightning_dragongairl_boss_loop} @self
 lightning_dragongairl_boss_loop:
   Skills:
