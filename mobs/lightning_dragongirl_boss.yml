@@ -1,5 +1,5 @@
 lightning_dragongirl_boss:
-    Type: ZOMBIE
+    Type: IRON_GOLEM
     Display: 'lightning_dragongirl_boss'
     Health: 100
     Damage: 10
@@ -16,13 +16,14 @@ lightning_dragongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - meleeAttack{range=3} @self ~onDamaged
+    - meleeAttack{range=3} @target ~onAttack
     - lookAtPlayer{range=10} @self ~onSpawn
     AITargetSelectors:
     - clear
     - player
     Skills:
     - model{m=dragongirl;scale=3;s=1} @self ~onSpawn
+    - damage{amount=1} @self ~onEntercombat 
     - state{m=dragongirl;s=wake} @self ~onDamaged 
     - delay 40
     - state{m=dragongirl;s=attack_mode} @self 
