@@ -16,7 +16,7 @@ fistattack:
   - particle{particle=trial_spawner_detection_ominous;amount=50} @LocationRadius{radius=2}
   - delay 20
   - particlesphere{radius=5;particle=electric_spark;amount=1} @Location{yoffset=5}
-  - delay 40
+  - delay 60
   - particle{particle=explosion;amount=10} ~originLocation{yoffset=5}
   - damage{amount=10} @PIR {radius=5} 
   - setspeed{speed=1} @self
