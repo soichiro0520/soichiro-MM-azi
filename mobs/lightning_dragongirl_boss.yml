@@ -24,7 +24,7 @@ lightning_dragongirl_boss:
     - player
     - villagers
     Skills:
-    - model{m=dragongirl;scale=3;s=1} @self ~onSpawn
+    - model{m=dragongirl;scale=3;s=2} @self ~onSpawn
     - damage{amount=1} @self ~onEntercombat 
     - state{m=dragongirl;s=wake} @self ~onDamaged 
     - delay{duration=100} @self ~onDamaged
