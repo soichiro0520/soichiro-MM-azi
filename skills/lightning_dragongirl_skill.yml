@@ -3,7 +3,8 @@ dragongirl_skill:
   - aura{auraname=loop;d=500;interval=100;oT=lightning_dragongairl_boss_loop} @self
 lightning_dragongairl_boss_loop:
   Skills:
-  - skill{s=fistattack,normal_attack} @self
+  - skill{branch=true;skill=fistattack} @self
+  - skill{branch=true;skill=normal_attack} @self
 fistattack:
   Conditions:
   - hasaura{aura=silent} false
