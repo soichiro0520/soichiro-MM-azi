@@ -13,13 +13,10 @@ fistattack:
   - aura{auraName=silent;d=100;rd=true} @self
   - setspeed{speed=0} @self
   - state{m=dragongirl;s=fist_attack} @self
-  - delay{delay=20} @self
-  - particlecircle{radius=2;particle=trial_spawner_detection_ominous;amount=50} @self
-  - particle{particle=trial_spawner_detection_ominous;amount=50} @self
-  - delay{delay=20} @self
-  - particlesphere{radius=5;particle=electric_spark;amount=1} @Location{yoffset=5}
-  - delay{delay=40} @self
-  - particle{particle=explosion;amount=10} @blocksinradius{radius=5}
+  - particlecircle{radius=2;particle=trial_spawner_detection_ominous;amount=50;delay=20} @origin{yoffset=3;size=1}
+  - particle{particle=trial_spawner_detection_ominous;amount=50;delay=40} @LocationRadius{radius=3}
+  - particlesphere{radius=5;particle=electric_spark;amount=1;delay=60} @Location{yoffset=5}
+  - particle{particle=explosion;amount=10;delay=80} @blocksinradius{radius=5}
   - damage{amount=10} @PIR {radius=5} 
   - setspeed{speed=1} @self
   - skillCooldown{skill=fistattack;cooldown=400} @self
