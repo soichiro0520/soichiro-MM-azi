@@ -25,6 +25,6 @@ lightning_dragongirl_boss:
     - model{m=dragongirl;scale=3;s=1} @self ~onSpawn
     - damage{amount=1} @self ~onEntercombat 
     - state{m=dragongirl;s=wake} @self ~onDamaged 
-    - delay 40
+    - delay 200
     - state{m=dragongirl;s=attack_mode} @self 
     - skill{skill=dragongirl_skill}  @self ~onAttack 
