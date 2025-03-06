@@ -16,7 +16,7 @@ lightning_dragongirl_boss:
         Silent: true
     AIGoalSelectors:
     - clear
-    - rangedAttack{findTarget=true;r=3} @self ~onSpawn
+    - rangedAttack{findTarget=true;r=3} @self ~onAttack
     - lookAtPlayer{range=10} @self ~onSpawn
     AITargetSelectors:
     - clear
