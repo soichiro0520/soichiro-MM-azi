@@ -6,7 +6,7 @@ lightning_dragongirl_boss:
     Armor: 0
     BossBar:
         Enabled: true
-        Title: '雷の竜女テンペスト'
+        Title: '雷の竜女ゼフィルーナ'
         Color: yellow
     Options:
         PreventSunburn: true
