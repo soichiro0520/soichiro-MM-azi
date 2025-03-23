@@ -15,18 +15,12 @@ fistattack:
   - aura{auraName=silent;d=100;rd=true} @self
   - setspeed{speed=0} @self
   - state{m=dragongirl;s=fist_attack} @self
-  - particlecircle{
+  - particle{
       radius=10;
-      particle=trial_spawner_detection_ominous;
+      particle=dripping_lava;
       amount=50;
       delay=20
     } 
-  - particlecircle{
-      radius=2;
-      particle=trial_spawner_detection_ominous;
-      amount=50;
-      delay=20
-    } @origin{yoffset=3;size=1}
   - particle{
       particle=trial_spawner_detection_ominous;
       amount=50;
