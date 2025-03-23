@@ -6,6 +6,7 @@ lightning_cloud:
     Armor: 0
     Options:
         AlwaysShowName: true
+        PreventSunburn: true
         invincible: false
         preventOtherDrops: true
         Silent: true
