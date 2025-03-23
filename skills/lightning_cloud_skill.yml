@@ -5,7 +5,15 @@ lightning_cloud_loop:
   Skills:
   - skill{skill=lightningstrike} @self
 lightningstrike:
-  Skills:
+  - particle{
+      particle=campfire_signal_smoke;
+      amount=20;
+      radius=4;
+      yoffset=5;
+      duration=200;
+      interval=10;
+      } @origin ~onSpawn
+  - fly{speed=1;direction=up} @self ~onSpawn
   - particle{
       particle=explosion;
       amount=10;
