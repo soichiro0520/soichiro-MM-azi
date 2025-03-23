@@ -28,6 +28,6 @@ lightning_cloud:
       yoffset=5;
       duration=200;
       interval=10;
-      } @origin 
+      } @origin ~onSpawn 
       - skill{skill=lightning_cloud_skill} @self ~onSpawn
       - remove{delay=200} @self ~onSpawn
