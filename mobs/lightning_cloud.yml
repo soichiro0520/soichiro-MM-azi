@@ -25,4 +25,4 @@ lightning_cloud:
         amount=10;
       } @self ~onSpawn
     - fly{speed=1} @self ~onSpawn
-    - skill{skill=lightning_cloud_skill} @self ~onSpawn
+    - skill{skill=lightning_cloud_skill;cooldown=100} @self ~onSpawn
