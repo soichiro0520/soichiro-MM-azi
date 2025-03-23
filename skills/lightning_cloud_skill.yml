@@ -1,5 +1,15 @@
 lightningstrike:
+  Skills:
+  - aura{auraname=loop;d=2000;interval=300;oT=lightning_loop} @self
+lightning_loop:
+  Skills:
+  - skill{skill=strike} @self
+strike:
   skills:
+  Conditions:
+    - hasaura{aura=silent} false
+  Skills:
+    - aura{auraName=silent;d=100;rd=true} @self
     - fakelightning @target
     - fakelightning @self
     - fakelightning{repeat=20;repeatInterval=1} @PIR{r=100}
