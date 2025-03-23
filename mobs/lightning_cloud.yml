@@ -1,5 +1,5 @@
 lightning_cloud:
-    Type: DISPLAY_ENTITY
+    Type: SLIME
     Display: 'lightning_cloud'
     Health: 10
     Damage: 5
@@ -22,8 +22,8 @@ lightning_cloud:
     Skills:
     - particle{
         particle=campfire_signal_smoke;
-        amount=10;
+        amount=20;
         radius=2
-      } @self ~onSpawn
+      } @Location{yoffset=5} ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
     - skill{skill=lightning_cloud_skill;cooldown=100} @self ~onSpawn
