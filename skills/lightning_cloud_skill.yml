@@ -7,14 +7,6 @@ lightning_cloud_loop:
 lightningstrike:
   skills:
   - particle{
-      particle=campfire_signal_smoke;
-      amount=20;
-      radius=4;
-      yoffset=5;
-      duration=200;
-      interval=10;
-      } @origin 
-  - particle{
       particle=explosion;
       amount=10;
     } @origin

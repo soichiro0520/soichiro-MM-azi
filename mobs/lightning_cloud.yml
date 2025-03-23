@@ -21,5 +21,13 @@ lightning_cloud:
     - clear
     - player{range=10} @self ~onSpawn
     Skills:
-    - skill{s=lightning_cloud_skill} @self ~onSpawn
+    - particle{
+    particle=campfire_signal_smoke;
+    amount=20;
+    radius=4;
+    yoffset=5;
+    duration=200;
+    interval=10;
+    } @origin 
+    - skill{skill=lightning_cloud_skill} @self ~onSpawn
     - remove{delay=200} @self ~onSpawn
