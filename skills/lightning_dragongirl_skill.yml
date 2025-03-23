@@ -20,7 +20,9 @@ fistattack:
       particle=dripping_lava;
       amount=50;
       delay=20
-    } 
+      duration=40
+
+    } @radius{radius=10} 
   - particle{
       particle=trial_spawner_detection_ominous;
       amount=50;
