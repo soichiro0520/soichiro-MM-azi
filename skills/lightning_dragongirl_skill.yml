@@ -17,11 +17,11 @@ fistattack:
   - state{m=dragongirl;s=fist_attack} @self
   - particle{
       radius=10;
-      particle=dripping_lava;
+      particle=campfire_cosy_smoke;
       amount=50;
-      delay=20
+      delay=20;
       duration=40
-    } @origininradius{radius=10}
+    } 
   - particle{
       particle=trial_spawner_detection_ominous;
       amount=50;
