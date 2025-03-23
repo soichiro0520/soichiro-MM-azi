@@ -1,0 +1,28 @@
+lightning_cloud:
+    Type: BLAZE
+    Display: 'lightning_cloud'
+    Health: 10
+    Damage: 5
+    Armor: 0
+    Options:
+        AlwaysShowName: true
+        invincible: false
+        preventOtherDrops: true
+        Silent: true
+        Knockbackregistance: 1
+        walkspeed: 1
+        collaspe: false
+        Invisible: true
+    AIGoalSelectors:
+    - clear
+    - fleePlayers 
+    AITargetSelectors:
+    - clear
+    - player{range=10} @self ~onSpawn
+    Skills:
+    - particle{
+        particle=cloud;
+        amount=10;
+      } @self ~onSpawn
+    - fly{speed=1} @self ~onSpawn
+    - skill{skill=lightning_cloud_skill} @self ~onSpawn

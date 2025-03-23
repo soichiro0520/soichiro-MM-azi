@@ -1,0 +1,25 @@
+lightning_cloud_skill:
+  Skills:
+  - aura{auraname=loop;d=2000;interval=300;oT=lightning_cloud_loop} @self
+lightning_cloud_loop:
+  Skills:
+  - skill{skill=lightningstrike} @self
+lightningstrike:
+  Skills:
+  - particle{
+      particle=dust;
+      amount=10;
+    } @Location{yoffset=5}
+  - particle{
+      particle=explosion;
+      amount=10;
+    } @origin
+  - particlesphere{
+      particle=electric_spark;
+      radius=5;
+      amount=10;
+    } @Location{yoffset=5}
+  - damage{
+      amount=5;
+    } @LocationRadius{radius=3;yoffset=5}
+  - skillCooldown{skill=lightningstrike;cooldown=100} @self
