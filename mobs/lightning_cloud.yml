@@ -30,3 +30,4 @@ lightning_cloud:
       } @origin ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
     - skill{skill=lightning_cloud_skill;cooldown=100} @self ~onSpawn
+    - remove{delay=200} @self ~onSpawn
