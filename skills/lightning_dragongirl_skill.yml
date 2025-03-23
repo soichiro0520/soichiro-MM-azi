@@ -55,5 +55,5 @@ fistattack:
     } @entitiesInRadius{radius=10}  
   
   - setspeed{speed=1;delay=100} @self
-  - summon{type=lightning_cloud;amount=4;delay=70} @radius{radius=5}
+  - summon{type=lightning_cloud;amount=4;delay=70} @Location{radius=5}
   - skillCooldown{skill=fistattack;cooldown=400} @self
