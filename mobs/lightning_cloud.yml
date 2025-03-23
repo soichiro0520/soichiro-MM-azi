@@ -23,7 +23,7 @@ lightning_cloud:
     Skills:
     - particlesphere{
         particle=campfire_signal_smoke;
-        amount=20;
+        amount=200;
         radius=2;
         yoffset=5;
         duration=200;
