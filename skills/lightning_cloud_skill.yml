@@ -1,8 +1,8 @@
 lightningstrike:
   skills:
-  - summonfallingblock{
-      block=sea_lantern;
-      amount=1;
-      radius=1;
-      yoffset=3;
-    } @origin 
+  - particle{
+      particle=explosion;
+      amount=10;
+      interval=10;
+      radius=5
+    } @blocksinradius{radius=5}
