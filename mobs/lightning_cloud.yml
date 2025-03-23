@@ -29,5 +29,5 @@ lightning_cloud:
         duration=200;
       } @origin ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
-    - skill{skill=lightning_cloud_skill} @self ~onSpawn
+    - skill{skill=lightningstrike} @self ~onSpawn
     - remove{delay=200} @self ~onSpawn

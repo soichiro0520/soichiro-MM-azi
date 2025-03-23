@@ -1,9 +1,3 @@
-lightning_cloud_skill:
-  Skills:
-  - aura{auraname=loop;d=200;interval=10;oT=lightning_cloud_loop} @self
-lightning_cloud_loop:
-  Skills:
-  - skill{skill=lightningstrike} @self
 lightningstrike:
   - particle{
       particle=instant_effect;
