@@ -1,5 +1,5 @@
 lightning_cloud:
-    Type: BLAZE
+    Type: DISPLAY_ENTITY
     Display: 'lightning_cloud'
     Health: 10
     Damage: 5
