@@ -4,4 +4,4 @@ lightningstrike:
       amount=10;
       radius=1;
       duration=20
-    } @Line{range=10;offset=3}
+    } @Line{range=10;offset=3;r=1;interval=1;fromorigin=true}
