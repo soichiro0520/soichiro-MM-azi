@@ -13,7 +13,6 @@ lightningstrike:
       duration=200;
       interval=10;
       } @origin 
-  - fly{speed=1;direction=up} @self ~onSpawn
   - particle{
       particle=explosion;
       amount=10;
