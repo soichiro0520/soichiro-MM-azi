@@ -1,6 +1,6 @@
 lightningstrike:
   Skills:
-  - aura{auraname=loop;d=2000;interval=300;oT=lightning_loop} @self
+  - aura{auraname=loop;d=200;interval=10;oT=lightning_loop} @self
 lightning_loop:
   Skills:
   - skill{skill=strike} @self
