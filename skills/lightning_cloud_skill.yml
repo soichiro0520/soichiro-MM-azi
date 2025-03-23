@@ -1,6 +1,6 @@
 lightning_cloud_skill:
   Skills:
-  - aura{auraname=loop;d=2000;interval=300;oT=lightning_cloud_loop} @self
+  - aura{auraname=loop;d=200;interval=20;oT=lightning_cloud_loop} @self
 lightning_cloud_loop:
   Skills:
   - skill{skill=lightningstrike} @self
