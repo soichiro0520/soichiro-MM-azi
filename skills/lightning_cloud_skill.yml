@@ -13,5 +13,4 @@ strike:
     - fakelightning @self
     - damage{
         amount=5;
-        delay=20
       } @entitiesInRadius{radius=2}
