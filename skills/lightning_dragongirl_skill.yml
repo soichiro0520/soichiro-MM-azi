@@ -22,7 +22,7 @@ fistattack:
       delay=20
       duration=40
 
-    } @radius{radius=10} 
+    } @origininradius{radius=10}
   - particle{
       particle=trial_spawner_detection_ominous;
       amount=50;
