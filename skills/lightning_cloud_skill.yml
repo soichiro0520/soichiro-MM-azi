@@ -1,8 +1,5 @@
 lightningstrike:
   skills:
-  - particle{
-      particle=explosion;
-      amount=10;
-      interval=10;
-      radius=5
-    } @blocksinradius{radius=5}
+    - fakelightning @target
+    - fakelightning @self
+    - fakelightning{repeat=20;repeatInterval=1} @PIR{r=100}
