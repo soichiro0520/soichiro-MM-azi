@@ -10,8 +10,10 @@ strike:
     - hasaura{aura=silent} false
   Skills:
     - aura{auraName=silent;d=100;rd=true} @self
-    - fakelightning @self {delay=40}
+    - fakelightning @self 
+    - fakelightning{repeat=10;repeatInterval=1} @PIR{r=100}
     - damage{
         amount=5;
-        delay=40
+        repeat=10;
+        repeatInterval=1
       } @entitiesInRadius{radius=2}
