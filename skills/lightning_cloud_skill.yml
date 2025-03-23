@@ -9,13 +9,15 @@ lightningstrike:
   - particle{
       particle=explosion;
       amount=10;
+      delay=60;
     } @origin
   - particlesphere{
       particle=electric_spark;
       radius=5;
       amount=10;
+      delay=60;
     } @Location{yoffset=5}
   - damage{
       amount=5;
+      delay=60;
     } @LocationRadius{radius=3;yoffset=5}
-  - skillCooldown{skill=lightningstrike;cooldown=100} @self
