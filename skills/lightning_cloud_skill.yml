@@ -5,6 +5,7 @@ lightning_cloud_loop:
   Skills:
   - skill{skill=lightningstrike} @self
 lightningstrike:
+  skills:
   - particle{
       particle=campfire_signal_smoke;
       amount=20;
