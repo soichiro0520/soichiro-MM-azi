@@ -1,9 +1,0 @@
-lightningstrike:
-  skills:
-  - summonfallingblock{
-      block=sea_lantern;
-      amount=1;
-      radius=1;
-      yoffset=3;
-      duration=200;
-    } @origin 

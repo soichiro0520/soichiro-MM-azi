@@ -28,6 +28,11 @@ lightning_cloud:
         yoffset=3;
         duration=200;
       } @origin ~onSpawn
-    - fly{speed=1;direction=up} @self ~onSpawn
-    - skill{skill=lightningstrike} @self ~onSpawn
+    - summonfallingblock{
+      block=sea_lantern;
+      amount=1;
+      radius=1;
+      yoffset=3;
+      duration=200;
+    } @origin 
     - remove{delay=200} @self ~onSpawn
