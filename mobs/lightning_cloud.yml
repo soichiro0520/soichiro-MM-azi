@@ -21,10 +21,10 @@ lightning_cloud:
     - clear
     - player{range=10} @self ~onSpawn
     Skills:
-    - particle{
+    - particlesphere{
         particle=campfire_signal_smoke;
         amount=20;
-        radius=5;
+        radius=2;
         yoffset=5;
         duration=200;
       } @origin ~onSpawn
