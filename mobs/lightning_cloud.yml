@@ -25,7 +25,7 @@ lightning_cloud:
         particle=campfire_signal_smoke;
         amount=200;
         radius=1;
-        yoffset=5;
+        yoffset=3;
         duration=200;
       } @origin ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
