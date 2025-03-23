@@ -4,17 +4,4 @@ lightningstrike:
       amount=10;
       radius=1;
       duration=20
-    } @Location{yoffset=3}
-  - particle{
-      particle=instant_effect;
-      amount=10;
-      radius=1;
-      duration=20
-    } @Location{yoffset=2}
-  - particle{
-      particle=instant_effect;
-      amount=10;
-      radius=1;
-      duration=20
-    } @Location{yoffset=1}
-    
+    } @Line{range=10;offset=3}
