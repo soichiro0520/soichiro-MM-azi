@@ -7,10 +7,6 @@ lightning_cloud_loop:
 lightningstrike:
   Skills:
   - particle{
-      particle=dust;
-      amount=10;
-    } @Location{yoffset=5}
-  - particle{
       particle=explosion;
       amount=10;
     } @origin

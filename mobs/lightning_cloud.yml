@@ -21,7 +21,7 @@ lightning_cloud:
     - player{range=10} @self ~onSpawn
     Skills:
     - particle{
-        particle=campfire_cosy_smoke;
+        particle=campfire_signal_smoke;
         amount=10;
       } @self ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
