@@ -11,7 +11,7 @@ strike:
   Skills:
     - aura{auraName=silent;d=100;rd=true} @self
     - fakelightning @self 
-    - fakelightning{repeat=10;repeatInterval=1} @PIR{r=100}
+    - fakelightning{repeat=10;repeatInterval=1} @self
     - damage{
         amount=1;
         repeat=10;
