@@ -21,18 +21,18 @@ lightning_cloud:
     - clear
     - player{range=10} @self ~onSpawn
     Skills:
-    - particlesphere{
+      - particlesphere{
         particle=campfire_signal_smoke;
         amount=200;
         radius=1;
         yoffset=3;
         duration=200;
       } @origin ~onSpawn
-    - summonfallingblock{
+      - summonfallingblock{
       block=sea_lantern;
       amount=1;
       radius=1;
       yoffset=3;
       duration=200;
-    } @origin 
-    - remove{delay=200} @self ~onSpawn
+      } @origin 
+      - remove{delay=200} @self ~onSpawn
