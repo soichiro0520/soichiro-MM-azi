@@ -23,6 +23,7 @@ lightning_cloud:
     - particle{
         particle=campfire_signal_smoke;
         amount=10;
+        radius=2
       } @self ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
     - skill{skill=lightning_cloud_skill;cooldown=100} @self ~onSpawn
