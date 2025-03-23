@@ -1,5 +1,5 @@
 lightning_cloud:
-    Type: SLIME
+    Type: ZOMBIE
     Display: 'lightning_cloud'
     Health: 10
     Damage: 5
@@ -23,7 +23,8 @@ lightning_cloud:
     - particle{
         particle=campfire_signal_smoke;
         amount=20;
-        radius=2
-      } @Location{yoffset=5} ~onSpawn
+        radius=2;
+        yoffset=5;
+      } @origin ~onSpawn
     - fly{speed=1;direction=up} @self ~onSpawn
     - skill{skill=lightning_cloud_skill;cooldown=100} @self ~onSpawn
