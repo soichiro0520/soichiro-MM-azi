@@ -10,13 +10,8 @@ strike:
     - hasaura{aura=silent} false
   Skills:
     - aura{auraName=silent;d=100;rd=true} @self
-    - particle{
-        particle=dust;
-        amount=50;
-        yoffset=1;
-        radius=3;
-    }
-    {;repeat=10;repeatInterval=1} @self
+    - fakelightning @self 
+    - fakelightning{repeat=10;repeatInterval=1} @se
     - damage{
         amount=1;
         repeat=10;
