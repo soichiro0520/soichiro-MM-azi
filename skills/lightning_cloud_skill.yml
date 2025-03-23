@@ -5,16 +5,22 @@ lightning_cloud_loop:
   Skills:
   - skill{skill=lightningstrike} @self
 lightningstrike:
-  skills:
   - particle{
-      particle=explosion;
-      amount=10;
-    } @origin
-  - particlesphere{
       particle=electric_spark;
-      radius=5;
       amount=10;
-    } @Location{yoffset=5}
-  - damage{
-      amount=5;
-    } @LocationRadius{radius=3;yoffset=5}
+      radius=1;
+      duration=20
+    } @Location{yoffset=3}
+  - particle{
+      particle=electric_spark;
+      amount=10;
+      radius=1;
+      duration=20
+    } @Location{yoffset=2}
+  - particle{
+      particle=electric_spark;
+      amount=10;
+      radius=1;
+      duration=20
+    } @Location{yoffset=1}
+    
